@@ -1,0 +1,11 @@
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        one, two = 1, 1
+        for i in range(n-1):
+            one, two = one + two, one
+        return one    
+
+
+    # understand all the possible solution of this 
+    #espicallt the backtracking one dfs decision tree.    
+        
